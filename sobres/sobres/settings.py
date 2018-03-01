@@ -63,6 +63,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
             ],
         },
     },
@@ -119,3 +120,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+##
+## SAMPLE OF HOW TO LOAD TEMPLATES
+##
+#TEMPLATE_DIRS = (
+##    os.path.join(os.path.dirname(__file__), '../isobres/templates'),
+##)
