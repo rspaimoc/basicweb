@@ -18,6 +18,8 @@ from django.contrib import admin
 from isobres.views import *
 
 urlpatterns = [
+    url(r'^user/(\w+)/$', userpage),
     url(r'^$', mainpage, name='home'),
+    #url(r'^login/$', 'django.contrib.auth.views.login'),
     url(r'^admin/', admin.site.urls),
 ]
